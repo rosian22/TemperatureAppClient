@@ -1,0 +1,19 @@
+.tempdata{
+  border: 1px solid blue;
+  flex-grow: 3;
+  flex-basis: 33.333333%;
+  min-height: 300px;
+
+}
+.data-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 20px;
+}
+
+.actions-container{
+  border: 1px solid orange;
+  width: 100%;
+}
