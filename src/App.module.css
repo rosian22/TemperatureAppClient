@@ -1,11 +1,16 @@
-.tempdata{
+.tempdata {
   border: 1px solid blue;
   flex-grow: 3;
   flex-basis: 33.333333%;
   min-height: 300px;
-
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
 }
-.data-container{
+
+.data-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +18,13 @@
   padding: 20px;
 }
 
-.actions-container{
+.actions-container {
   border: 1px solid orange;
   width: 100%;
 }
+
+p {
+  font-size: 70px;
+  font-family: sans-serif;
+}
+
