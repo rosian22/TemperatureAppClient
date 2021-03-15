@@ -7,8 +7,6 @@ import { init } from 'emailjs-com';
 import emailjs from 'emailjs-com';
 
 var initialHeatValue = "";
-var shouldSkipFirstTime = true;
-
 function Display() {
 
     const [tempObject, settempObject] = useState({});
@@ -71,19 +69,12 @@ function Display() {
     useEffect(() => {
         init("user_SFQYzxwVQ9qt3YMnz4A4T");
 
-        if (!shouldSkipFirstTime) {
+        let interval = setInterval(async () => {
+            await tempPromis();
+        }, 10000);
 
-            let interval = setInterval(async () => {
-                await tempPromis();
-            }, 10000);
-
-            return () => {
-                clearInterval(interval)
-            }
-        }
-        else {
-            tempPromis();
-            shouldSkipFirstTime = false;
+        return () => {
+            clearInterval(interval)
         }
 
     }, [])
