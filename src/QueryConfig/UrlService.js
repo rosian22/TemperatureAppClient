@@ -1,6 +1,6 @@
 
 const getTemperatureData = () => {
-    return 'http://192.168.0.103/';    
+    return 'https://aa4eca74b5bf.ngrok.io';    
 }
 
 
