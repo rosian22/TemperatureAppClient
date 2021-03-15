@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import classes from './App.module.css';
 import queryServices from './QueryConfig/QueryService.js';
-import { useQuery } from 'react-query';
 import URLService from './QueryConfig/UrlService';
 import { init } from 'emailjs-com';
 import emailjs from 'emailjs-com';

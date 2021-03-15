@@ -1,5 +1,3 @@
-import URLService from './UrlService.js';
-
 const generalQueryConfig = {
     staleTime: 10000,
     cacheTime: 10000,
